@@ -220,3 +220,20 @@ function accordion(id) {
   }
 }
 // Accordion end
+
+// Test only (to be removed later)
+// Toggle roles @ header program
+let Comptech = document.getElementById('comptech');
+let Webdev = document.getElementById('webdev');
+let Socmed = document.getElementById('socmed');
+function comptech(){
+  Comptech.className = Comptech.className.replace('d-none', 'd-block');
+  Webdev.className += ' d-none'
+}
+function webdev(){
+  Comptech.className = Comptech.className.replace('d-block', 'd-none');
+  Webdev.className = Webdev.className.replace('d-none', 'd-block');
+}
+function socmed(){
+
+}

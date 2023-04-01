@@ -105,22 +105,31 @@
   <header role="banner" class="container-fluid">
     <!-- Intro -->
     <section id="intro" class="row text-white">
-      <div class="w3-left col p-5"><h1>Let's build your webpage of the 
-        future!</h1>
-        <small>And take it to the Sun and Moon!</small>
-        <button class="btn btn-outline-light d-block mt-3">Computer and Networking repair</button>
-        <button class="btn btn-outline-light d-block mt-3">Build Webpages</button>
+      <div class="w3-left col p-5">
+        <div id="webdev">
+          <h1>Let's build your webpage of the future!</h1>
+          <small>And take it to the Sun and Moon!</small>
+        </div>
+        <div id="comptech" class="d-none">
+          <h1>Let we fix your computer</h1>
+          <small>And get 150 percent value!</small>
+        </div>
+        <button class="btn btn-outline-light d-block mt-3" onclick="comptech()">Computer and Networking repair</button>
+        <button class="btn btn-outline-light d-block mt-3" onclick="webdev()">Build Webpages</button>
         <!-- For referencing/drafting only -->
         <button id="socmed" class="btn btn-outline-light d-block mt-3">Social Media Management</button>
         <!---->
       </div>
       <div class="col w3-right w3-center w3-padding-16 w3-opacity">
-        <div class="container" title="IT Web Solutions">
+        <div class="container" title="ICT Web Solutions">
+          <!--
           <svg height="350" width="350">
             <circle cx="180" cy="135" r="135" stroke='white' stroke-width="5" 
             fill='transparent'/>
             <text x="100" y="180" fill="white" font-size="8rem">ICT</text>
           </svg>
+          -->
+          <img src="icttech.png" class="img-fluid" alt="ICT Web Solutions">
         </div>
         </div>
     </section>
