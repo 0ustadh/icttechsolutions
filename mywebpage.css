@@ -1,11 +1,7 @@
-html,body,h1,h2,h3,h4,h5,h6 {
-  /*font-family:"Roboto", sans-serif;*/
-  font-family: 'Gugi', sans-serif;
-}
-
+h1,h2,h3,h4,h5,h6{font-family:inherit}
 a{text-decoration:none;}
-::selection{background-color:darkgreen; color:white;}
-.darkgreen, a:hover{color:darkgreen;}
+::selection{background-color:#3cd6eb; color:white;}
+.darkgreen, a:hover{color:#3cd6eb;}
 
 /* Main Content */
 main{max-width:1400px;}

@@ -27,24 +27,20 @@ function toggleMode(){
   darkBtn();
   }
 
+  // Frequently used variables in this program
+  const toggler = document.getElementById('toggle');
+
   function toggleText(){
-    const toggler = document.getElementById('toggle');
-    const toggler2 = document.getElementById('toggle2');
-      if (toggler.innerHTML === 'Light' && toggler2.innerHTML === 'Light'){
+      if (toggler.innerHTML === 'Light'){
         toggler.innerHTML = "Dark";
-        toggler2.innerHTML = "Dark";
       } else{
         toggler.innerHTML = "Light";
-        toggler2.innerHTML = "Light";
       }
     }
 
   // Changes bgcolor of toggler when clicked 
   function toggleBtn(){
-    const btn = document.getElementById('toggle');
-    const btn2 = document.getElementById('toggle2');
-    btn.classList.toggle('w3-black');
-    btn2.classList.toggle('w3-black');
+    toggler.classList.toggle('w3-black');
     }
   
   // Custom Dark theme for cards
@@ -114,60 +110,6 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-white";
 }
-
-/*
-let slideIndex = [1,1];
-let slideId = ["mySlides1", "mySlides2"]
-showDivs(1, 0);
-showDivs(1, 1);
-
-function plusDivs(n, no) {
-  showDivs(slideIndex[no] += n, no);
-}
-// currentDiv
-function currentDiv(n, no) {
-  showDivs(slideIndex[no] = n, no);
-}
-
-function showDivs(n, no) {
-  let i;
-  let x = document.getElementsByClassName(slideId[no]);
-  if (n > x.length) {slideIndex[no] = 1}
-  if (n < 1) {slideIndex[no] = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex[no]-1].style.display = "block"; 
-  // Dots
-  //let dotIndex = ['demo', 'demo1'];
-  let dots = document.getElementsByClassName('demo');
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  dots[slideIndex-1].className += " w3-white";
-}
-*/
-/*
-let myIndex = 0;
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
-  
-  let dots = document.getElementsByClassName("demo");
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  dots[slideIndex-1].className += " w3-white";
-}
-carousel()
-*/
 // Slideshow end
 
 // Fade-in animation
@@ -221,19 +163,49 @@ function accordion(id) {
 }
 // Accordion end
 
-// Test only (to be removed later)
 // Toggle roles @ header program
 let Comptech = document.getElementById('comptech');
 let Webdev = document.getElementById('webdev');
 let Socmed = document.getElementById('socmed');
+const intro = document.getElementById('intro');
 function comptech(){
+  Webdev.className += ' d-none';
   Comptech.className = Comptech.className.replace('d-none', 'd-block');
-  Webdev.className += ' d-none'
+  Webdev.className = Webdev.className.replace('d-block', 'd-none');
+  Socmed.className = Socmed.className.replace('d-block', 'd-none');
+  intro.style.backgroundImage = 'url(comptech.jpg)';
 }
-function webdev(){
-  Comptech.className = Comptech.className.replace('d-block', 'd-none');
+function webdev(){  
+  Webdev.className -= ' d-none'; // minus (-) instead of plus
   Webdev.className = Webdev.className.replace('d-none', 'd-block');
+  Comptech.className = Comptech.className.replace('d-block', 'd-none');
+  Socmed.className = Socmed.className.replace('d-block', 'd-none');
+  intro.style.backgroundImage = 'url(bgimg.jpg)';
 }
 function socmed(){
-
+  Webdev.className += ' d-none';
+  Socmed.className = Socmed.className.replace('d-none', 'd-block');
+  Comptech.className = Comptech.className.replace('d-block', 'd-none');
+  Webdev.className = Webdev.className.replace('d-block', 'd-none');
+  intro.style.backgroundImage = 'url(socmed.jpg)';
 }
+
+// Change Font program
+const body = document.body;
+const font = document.getElementById('font');
+const Roboto = document.getElementById('Roboto');
+const Segoe = document.getElementById('Segoe');
+const Gugi = document.getElementById('Gugi');
+ function roboto(){
+  body.style.fontFamily = 'Roboto';
+  font.innerHTML = Roboto.innerHTML;
+ }
+ function segoe(){
+  body.style.fontFamily = 'Segoe UI';
+  font.innerHTML = Segoe.innerHTML;
+ }
+ function gugi(){
+  body.style.fontFamily = 'Gugi';
+  font.innerHTML = Gugi.innerHTML;
+ }
+// Change Font program end
