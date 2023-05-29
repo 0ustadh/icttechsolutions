@@ -83,6 +83,8 @@ function toggleMode(){
   // Dark mode by default
   window.onload = function() {
      toggleMode(); 
+     webdev(); // Put it here because only 1 window.onload is allowed per project
+     segoe();
   }
   // Dark mode program end
 
@@ -164,10 +166,18 @@ function accordion(id) {
 // Accordion end
 
 // Toggle roles @ header program
+// Bagckground / headers
 let Comptech = document.getElementById('comptech');
 let Webdev = document.getElementById('webdev');
 let Socmed = document.getElementById('socmed');
 const intro = document.getElementById('intro');
+// contents
+let computerTech, webdeveloper, socmedmanage;
+computerTech = document.getElementsByClassName('computertech');
+webdeveloper = document.getElementsByClassName('webdevpr');
+socmedmanage = document.getElementsByClassName('socialmed');
+
+// Program proper
 function comptech(){
   Webdev.className += ' d-none';
   Comptech.className = Comptech.className.replace('d-none', 'd-block');
@@ -189,6 +199,7 @@ function socmed(){
   Webdev.className = Webdev.className.replace('d-block', 'd-none');
   intro.style.backgroundImage = 'url(socmed.jpg)';
 }
+// Toggle roles program end
 
 // Change Font program
 const body = document.body;
