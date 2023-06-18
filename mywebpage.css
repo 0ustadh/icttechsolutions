@@ -15,6 +15,7 @@ main{max-width:1400px;}
 }
 #contact{word-wrap: break-word;}
 .spons .icon{font-size:11rem;margin:8px;}
+.lookfor{cursor:pointer}
 /* Slides */
 .mySlides {display:none}
 .w3-left, .w3-right, .w3-badge {cursor:pointer}

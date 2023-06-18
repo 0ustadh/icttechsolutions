@@ -171,11 +171,6 @@ let Comptech = document.getElementById('comptech');
 let Webdev = document.getElementById('webdev');
 let Socmed = document.getElementById('socmed');
 const intro = document.getElementById('intro');
-// contents
-let computerTech, webdeveloper, socmedmanage;
-computerTech = document.getElementsByClassName('computertech');
-webdeveloper = document.getElementsByClassName('webdevpr');
-socmedmanage = document.getElementsByClassName('socialmed');
 
 // Program proper
 function comptech(){
@@ -184,6 +179,15 @@ function comptech(){
   Webdev.className = Webdev.className.replace('d-block', 'd-none');
   Socmed.className = Socmed.className.replace('d-block', 'd-none');
   intro.style.backgroundImage = 'url(comptech.jpg)';
+  document.querySelectorAll('.socialmed').forEach(
+    (el)=>el.classList.add('d-none')
+    );
+  document.querySelectorAll('.webdevpr').forEach(
+    (el)=>el.classList.add('d-none')
+    );
+  document.querySelectorAll('.computertech').forEach(
+    (el)=>el.classList.remove('d-none')
+    );
 }
 function webdev(){  
   Webdev.className -= ' d-none'; // minus (-) instead of plus
@@ -191,6 +195,15 @@ function webdev(){
   Comptech.className = Comptech.className.replace('d-block', 'd-none');
   Socmed.className = Socmed.className.replace('d-block', 'd-none');
   intro.style.backgroundImage = 'url(bgimg.jpg)';
+  document.querySelectorAll('.computertech').forEach(
+    (el)=>el.classList.add('d-none')
+    );
+  document.querySelectorAll('.socialmed').forEach(
+    (el)=>el.classList.add('d-none')
+    );
+  document.querySelectorAll('.webdevpr').forEach(
+    (el)=>el.classList.remove('d-none')
+    );
 }
 function socmed(){
   Webdev.className += ' d-none';
@@ -198,6 +211,15 @@ function socmed(){
   Comptech.className = Comptech.className.replace('d-block', 'd-none');
   Webdev.className = Webdev.className.replace('d-block', 'd-none');
   intro.style.backgroundImage = 'url(socmed.jpg)';
+  document.querySelectorAll('.computertech').forEach(
+    (el)=>el.classList.add('d-none')
+    );
+  document.querySelectorAll('.webdevpr').forEach(
+    (el)=>el.classList.add('d-none')
+    );
+  document.querySelectorAll('.socialmed').forEach(
+    (el)=>el.classList.remove('d-none')
+    );
 }
 // Toggle roles program end
 

@@ -81,12 +81,10 @@
           </li>
           <li class="nav-item"><a href="#contact" class="nav-link">
           Contact</a></li>
-          <li class="nav-item"><a href="#footer" class="nav-link" 
-          data-bs-toggle="tooltip" data-bs-placement="bottom" title="Click 
-          for my Resume & Social media">CV & Social</a></li>
           <li class="nav-item"><a href="#" id="toggle" class="nav-link" 
-          onclick="toggleMode()" title="Click to switch to Light/Dark Mode">
-          Light</a></li>
+          onclick="toggleMode()" data-bs-toggle="tooltip" 
+          data-bs-placement="bottom" title="Click to switch to Light/Dark Mode"
+          >Light</a></li>
           <li class="nav-item">
             <div class="dropdown">
             <a href="#intro" class="nav-link dropdown-toggle" 
@@ -128,9 +126,12 @@
           <small>And get 150 percent value!</small>
         </div>
         <div class="btn-group">
-          <button class="btn btn-outline-info d-block mt-3" onclick="comptech()">Computer and Networking repair</button>
-          <button class="btn btn-outline-info d-block mt-3" onclick="webdev()">Build Webpages</button>
-          <button class="btn btn-outline-info d-block mt-3" onclick="socmed()">Social Media Management</button>
+          <button class="btn btn-outline-info d-block mt-3" 
+          onclick="comptech()">Computer and Networking repair</button>
+          <button class="btn btn-outline-info d-block mt-3" onclick="webdev()">
+            Build Webpages</button>
+          <button class="btn btn-outline-info d-block mt-3" onclick="socmed()">
+            Social Media Management</button>
         </div>
 
         </div>
@@ -147,37 +148,83 @@
 
           <div class="w3-col m6 text-start px-5">
             <h2>Why ICT Tech Solutions?</h2>
-            <p id="webdevpr">Simple tools like screening questions and candidate rating help 
+            <p class="webdevpr">Simple tools like screening questions and 
+              candidate rating help 
               you quickly filter and prioritize only the most qualified 
               candidates—so you can find the people you want to interview, 
               faster. Copied from LinkedIn Landing Page.</p>
-            <p class="computertech"></p>
-            <p class="socialmed"></p>
+            <p class="computertech">hi. Lorem ipsum dolor sit amet, 
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+              ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+              nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+              commodo consequat.</p>
+            <p class="socialmed">Hello! Duis aute irure dolor in reprehenderit 
+              in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
+              officia deserunt mollit anim id est laborum.</p>
           </div>
           <div class="w3-col m6">
             <h2>#1</h2>
             <p class="webdevpr">Webpage builder in the universe!</p>
-            <p class="computertech"></p>
-            <p class="socialmed"></p>
+            <p class="computertech">PC Builder in the universe!</p>
+            <p class="socialmed">Social Media Manager in the universe!</p>
           </div>
         </div>
-        <div class="w3-row-padding">
+
+        <div class="w3-row-padding webdevpr">
           <div class="w3-col m4 animate revealUp showme">
-            <img src="bgimg240p.png" alt="web development" class="img-fluid"/>
+            <img src="bgimg240p.png" alt="Hand-coded work made with dedication" 
+            class="img-fluid"/>
             <p class="mt-3">Hand-coded work made with dedication</p>
           </div>
           <div class="w3-col m4 animate revealUp showme delay1">
-            <img src="bground240p.png" alt="web development" class="img-fluid"/>
+            <img src="bground240p.png" alt="Responsive, Mobile-friendly webpage" 
+            class="img-fluid"/>
             <p class="mt-3">Responsive, Mobile-friendly webpage</p>
           </div>
           <div class="w3-col m4 mt-3 animate revealUp showme delay2">
-            <img src="bgimg240p.png" alt="web development" class="img-fluid"/>
+            <img src="bgimg240p.png" alt="Free revisions until you're satisfied" 
+            class="img-fluid"/>
+            <p class="mt-3">Free revisions until you're satisfied</p>
+          </div>
+        </div>
+        <div class="w3-row-padding computertech">
+          <div class="w3-col m4 animate revealUp showme">
+            <img src="gamingpc.png" alt="Personalized PC Building" 
+            class="img-fluid"/>
+            <p class="mt-3">Personalized PC Building</p>
+          </div>
+          <div class="w3-col m4 animate revealUp showme delay1">
+            <img src="laptopupgrade.png" alt="Laptop upgrades" class="img-fluid"/>
+            <p class="mt-3">Laptop upgrades for faster performance</p>
+          </div>
+          <div class="w3-col m4 mt-3 animate revealUp showme delay2">
+            <img src="serversetup.png" alt="Server set-up" class="img-fluid"/>
+            <p class="mt-3">Setting up servers with dedication</p>
+          </div>
+        </div>
+        <div class="w3-row-padding socialmed">
+          <div class="w3-col m4 animate revealUp showme">
+            <img src="socmedmarketing.png" alt="web development" 
+            class="img-fluid"/>
+            <p class="mt-3">Hand-coded work made with dedication</p>
+          </div>
+          <div class="w3-col m4 animate revealUp showme delay1">
+            <img src="linkedinsocmed.png" alt="web development" 
+            class="img-fluid"/>
+            <p class="mt-3">Responsive, Mobile-friendly webpage</p>
+          </div>
+          <div class="w3-col m4 mt-3 animate revealUp showme delay2">
+            <img src="ads.png" alt="web development" class="img-fluid"/>
             <p class="mt-3">Free revisions until you're satisfied</p>
           </div>
         </div>
         <div class="w3-center container-fluid animate revealUp showme delay1">
           <button type="button" class="btn btn-outline-info m-5">Let's 
-            build your website!</button>
+            <span class="webdevpr">build your website!</span>
+            <span class="computertech">build your PC!</span>
+            <span class="socialmed">unleash the power of Social Media!</span>
+          </button>
         </div>
 
       </article>
@@ -353,24 +400,64 @@
       <h2 class="text-center">Services Offered:</h2>
       <div class="w3-row-padding text-center">
 
-        <div class="w3-col m4 animate revealUp showme w3-responsive">
+        <div class="webdevpr">
+          <div class="w3-col m4 animate revealUp showme w3-responsive">
             <img src="bgimg240p.png" alt="Web Building" class="img-fluid"/>
             <a href='#intro'><h2>Hand-coded Webpage Building</h2></a>
-        </div>
-        <div class="w3-col m4 animate revealUp showme delay2 w3-responsive">
-          <img src="wixbuilding.png" alt="Wix/GoDaddy Webpage Building" 
-          class="img-fluid"/>
+          </div>
+          <div class="w3-col m4 animate revealUp showme delay2 w3-responsive">
+            <img src="wixbuilding.png" alt="Wix/GoDaddy Webpage Building" 
+            class="img-fluid"/>
             <a href='#intro'><h2>Wix/Squarespace Webpage Building</h2></a>
-        </div>
-        <div class="w3-col m4 animate revealUp showme delay1 w3-responsive">
+          </div>
+          <div class="w3-col m4 animate revealUp showme delay1 w3-responsive">
             <img src="converting.png" alt="Convert image to HTML" 
             class="img-fluid"/>
             <a href='#intro'><h2>Convert PSD/PNG/Image to HTML</h2></a>
-        </div>
-        <div class="w3-col m4 animate revealUp showme delay2 w3-responsive">
+          </div>
+          <div class="w3-col m4 animate revealUp showme delay2 w3-responsive">
             <img src="bugfixing.png" alt="Bug Fixing and Webpage improvements" 
             class="img-fluid"/>
             <a href='#intro'><h2>Bug Fixing and Webpage improvements</h2></a>
+          </div>
+        </div>
+
+        <div class="computertech">
+          <div class="w3-col m4 animate revealUp showme w3-responsive">
+            <img src="gamingpc.png" alt="PC Building" class="img-fluid"/>
+            <a href='#intro'><h2>Gaming PC Building</h2></a>
+          </div>
+          <div class="w3-col m4 animate revealUp showme delay2 w3-responsive">
+            <img src="pcrepair.png" alt="PC Troubleshooting" 
+            class="img-fluid"/>
+            <a href='#intro'><h2>PC Troubleshooting</h2></a>
+          </div>
+          <div class="w3-col m4 animate revealUp showme delay1 w3-responsive">
+            <img src="pcparts.png" alt="PC parts upgrade" 
+            class="img-fluid"/>
+            <a href='#intro'><h2>PC parts upgrade</h2></a>
+          </div>
+          <div class="w3-col m4 animate revealUp showme delay2 w3-responsive">
+            <img src="wlessrouter.png" alt="Wireless router set-up" 
+            class="img-fluid"/>
+            <a href='#intro'><h2>Wireless router set-up</h2></a>
+          </div>
+        </div>
+        <div class="socialmed">
+          <div class="w3-col m4 animate revealUp showme w3-responsive">
+            <img src="bzncards.png" alt="Business Cards" class="img-fluid"/>
+            <a href='#intro'><h2>Business cards</h2></a>
+          </div>
+          <div class="w3-col m4 animate revealUp showme delay2 w3-responsive">
+            <img src="linkedinsocmed.png" alt="Convert image to HTML" 
+            class="img-fluid"/>
+            <a href='#intro'><h2>LinkedIn Profile Creation</h2></a>
+          </div>
+          <div class="w3-col m4 animate revealUp showme delay1 w3-responsive">
+            <img src="socmedmarketing.png" alt="Socmed management" 
+            class="img-fluid"/>
+            <a href='#intro'><h2>Social Media Pages Management</h2></a>
+          </div>
         </div>
 
       </div>
@@ -393,7 +480,7 @@
         <div class="w3-hide" id="accordion">
         <!-- Logo -->
         <div class="container mb-3" title="IT Web Solutions">
-          <img src="logo.png" alt="IT Web Solutions" class="rounded-circle 
+          <img src="icttech.png" alt="ICT Tech Solutions" class="rounded-circle 
           img-fluid"/>
         </div>
         <!-- Logo end -->
@@ -417,7 +504,10 @@
       <article class="mt-1">
       <p class="text-center">Look for:</p>
       <img src="logo.png" alt="Profile" class="rounded-circle img-fluid 
-      w3-centered animate revealUp showme"/>
+      w3-centered animate revealUp showme lookfor" 
+      onclick="accordion('Accordion')"/>
+
+      <div class="w3-hide" id="Accordion">
       <h3 class="text-center mt-3 animate revealUp showme delay1">Ivan Dela 
         Torre</h3>
       <div class="container-fluid p-3">
@@ -430,13 +520,41 @@
       </div>
       <div class="w3-dropdown-hover">
       <button type="button" class="btn btn-outline-info"><a 
-        href="webdevelopercv.pdf" class="w3-bar-item">Download CV <i class="fa 
-        fa-caret-down"></i></a></button>
+        href="https://0ustadh.github.io/my-personal-website/#" 
+        class="w3-bar-item">View webpage <i class="fa fa-caret-down"></i></a>
+      </button>
         <div class="w3-dropdown-content w3-bar-block w3-card-4">
           <a href="portfolio/index.html" class="w3-bar-item w3-button">View 
             CV</a>
         </div>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="webdevelopercv.pdf" class="w3-bar-item w3-button">Download 
+            CV</a>
+        </div>
       </div>
+      </div>
+
+      <br/>
+
+      <img src="icttech.png" alt="Startup" class="rounded-circle img-fluid 
+      w3-centered animate revealUp showme lookfor" 
+      onclick="accordion('Accordions')"/>
+
+      <div class="w3-hide" id="Accordions">
+        <h3 class="text-center mt-3 animate revealUp showme delay1">ICT Tech 
+          Solutions</h3>
+        <div class="container-fluid p-3">
+          <p class="h2"><i class="fa fa-envelope"></i>  <a 
+            href="mailto:icttechsolutions100@gmail.com">
+            icttechsolutions100@gmail.com</a></p>
+        </div>
+        <div class="w3-dropdown-hover">
+        <button type="button" class="btn btn-outline-info"><a 
+          href="#" class="w3-bar-item">View webpage</a></button>
+          </div>
+        </div>
+        </div>
+
     </article>
     </section>
     <!-- Contact end -->
@@ -450,13 +568,16 @@
     target="_blank" aria-label="Facebook"><i class="fa fa-facebook-official 
     w3-hover-opacity w3-xxlarge"></i></a>
     <a href='https://www.instagram.com/ivdt_19/' target="_blank" 
-    aria-label="Instagram"><i class="fa fa-instagram w3-hover-opacity 
+    aria-label="Instagram" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+    title="Coming Soon!"><i class="fa fa-instagram w3-hover-opacity 
     w3-xxlarge"></i></a>
     <a href='https://twitter.com/IvanVincent019' target="_blank" 
-    aria-label="Twitter"><i class="fa fa-twitter w3-hover-opacity 
+    aria-label="Twitter" data-bs-toggle="tooltip" data-bs-placement="bottom" 
+    title="Coming Soon!"><i class="fa fa-twitter w3-hover-opacity 
     w3-xxlarge"></i></a>
     <a href='https://www.linkedin.com/in/ivan-vincent-dela-torre-153384247/' 
-    target="_blank" aria-label="LinkedIn"><i class="fa fa-linkedin 
+    target="_blank" aria-label="LinkedIn" data-bs-toggle="tooltip" 
+    data-bs-placement="bottom" title="Coming Soon!"><i class="fa fa-linkedin 
     w3-hover-opacity w3-xxlarge"></i></a>
     <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" 
       target="_blank" aria-label="W3.css">w3.css</a></p>
